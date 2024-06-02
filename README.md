@@ -30,4 +30,10 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 
-# Transpile Typescript into Javascript
+# Transpile Typescript into Javascript & Push it to github pages
+npm run predeploy
+git add . && git commit -m '<your-message>'
+git subtree push --prefix dist origin gh-pages
+
+
+- Check the actions since it will take time for github to queue and process your job
