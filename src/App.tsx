@@ -1,5 +1,9 @@
 function App() {
-  return <></>;
+  return (
+    <div>
+      <img src="./icon-star.svg"></img>
+    </div>
+  );
 }
 
 export default App;

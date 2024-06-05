@@ -34,6 +34,7 @@ export default {
 npm run predeploy
 git add . && git commit -m '<your-message>'
 git subtree push --prefix dist origin gh-pages
+git push origin master
 
 
 - Check the actions since it will take time for github to queue and process your job
