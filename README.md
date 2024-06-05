@@ -37,6 +37,6 @@ git subtree push --prefix dist origin gh-pages
 git push origin master
 
 # Submit a solution
-
+./submit-solution.sh '<message>'
 
 - Check the actions since it will take time for github to queue and process your job

@@ -1,0 +1,65 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+  width:  1440px;
+}
+
+.container {
+  display: flex;
+  background-color: hsl(213, 19%, 18%);
+  width: 50%;
+  margin: auto auto;
+  padding: 1.5em;
+  border-radius: 1em;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 30%;
+}
+
+.star {
+  background-color: hsl(217, 12%, 63%);
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.ratings {
+  display: flex;
+}
+
+button + button {
+  margin-left: 1em;
+}
+
+.rating-val {
+  text-decoration: none;
+  background-color: hsl(217, 12%, 63%);
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+}
+
+/*LoVe/HAte*/
+.rating-val:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.rating-val.selected {
+  background-color:  hsl(25, 97%, 53%);
+}
+
+.submit-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.submit-button:active {
+  background-color: hsl(25, 97%, 53%);
+}
