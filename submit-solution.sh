@@ -1,4 +1,5 @@
 #!/bin/bash
+git checkout master
 npm run predeploy
 # Pass the commit message as the first argument
 git add . && git commit -m "$0"
