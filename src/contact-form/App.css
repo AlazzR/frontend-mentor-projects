@@ -1,0 +1,82 @@
+:root {
+  background-color: hsl(148, 38%, 91%);
+  color: hsl(187, 24%, 22%);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+form {
+  background-color: white;
+  margin: 1.5em;
+  padding: 1.5em;
+  border-radius: 1em;
+}
+
+h1 {
+  color: black;
+}
+.field {
+  margin-right: 1em;
+}
+
+.field label {
+  display: block;
+}
+
+.field input {
+  display: inline-block;
+  border: 1px solid hsl(187, 24%, 22%);
+  border-radius: 0.5em;
+  padding: 0.8em;
+  width: 100%;
+}
+
+.row {
+    margin-top: 1em;
+}
+
+.field + .field {
+  margin-top: 1em;
+}
+
+label + input, select {
+  margin-top: 0.5em;
+}
+
+label::after,.consent::after {
+  content: '*';
+  margin-left: 0.4em;
+  color: hsl(187, 24%, 22%);
+}
+
+.option {
+  display: flex;
+  border: 1px solid hsl(187, 24%, 22%);
+  padding: 0.8em;
+  border-radius: 0.5em;
+}
+
+.option {
+  margin-top: 1em;
+}
+
+.option img {
+  margin-right: 1.5em;
+}
+
+.option div {
+  padding-top: 0.3em;
+}
+
+.field input[name="message"] {
+    height: 200px;
+}
+
+.field.consent-section input,.constent {
+  display: inline;
+}
