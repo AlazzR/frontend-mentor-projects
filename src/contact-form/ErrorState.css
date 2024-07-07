@@ -1,0 +1,9 @@
+.error-state {
+  display: none;
+  color: red;
+  margin-top: 10px;
+}
+
+.error-state.show {
+  display: block;
+}

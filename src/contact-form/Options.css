@@ -1,0 +1,38 @@
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.options__option {
+  display: flex;
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid;
+}
+
+.options__option + .options__option {
+  margin-top: 1em;
+}
+
+.options__option img {
+  margin-right: 1em;
+}
+
+
+.options__option .options__value {
+  font-size: 1.2em;
+  width: 100%;
+}
+
+@media screen and (min-width: 500px){
+  .options {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .options__option + .options__option {
+    margin-top: 0;
+    margin-left: 1em;
+  }
+}
