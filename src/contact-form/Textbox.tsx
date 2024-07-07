@@ -1,13 +1,12 @@
 import ErrorState from "./ErrorState";
 import "./Field.css";
 import { type Textbox } from "./types";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 
 export default function Textbox(props: Textbox) {
   const {
     value,
     onValueChange,
-    isRequired,
     fieldName,
     fieldLabel,
     showError,

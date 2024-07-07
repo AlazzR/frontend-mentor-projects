@@ -1,7 +1,7 @@
 import "./Field.css";
 import { type Textbox } from "./types";
 import ErrorState from "./ErrorState";
-import { ChangeEvent, MouseEventHandler, useState } from "react";
+import { MouseEventHandler } from "react";
 
 export default function Consent(props: Textbox) {
   const {
@@ -9,7 +9,6 @@ export default function Consent(props: Textbox) {
     errorMessage,
     showError,
     onValueChange,
-    isRequired,
     fieldName,
     fieldLabel,
   } = props;

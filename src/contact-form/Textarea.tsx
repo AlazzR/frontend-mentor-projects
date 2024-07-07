@@ -1,7 +1,7 @@
 import "./Field.css";
 import { type Textbox } from "./types";
 import ErrorState from "./ErrorState";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 
 export default function Textarea(props: Textbox) {
   const {
@@ -9,7 +9,6 @@ export default function Textarea(props: Textbox) {
     errorMessage,
     showError,
     onValueChange,
-    isRequired,
     fieldName,
     fieldLabel,
   } = props;
@@ -29,7 +28,7 @@ export default function Textarea(props: Textbox) {
         className="field__textarea"
         name={fieldName}
         onChange={onChange}
-        value={value ?? ""}
+        value={(value ?? "") as string}
       ></textarea>
       <ErrorState message={errorMessage} show={showError} />
     </div>

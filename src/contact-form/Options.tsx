@@ -2,16 +2,14 @@ import "./Field.css";
 import { type Options } from "./types";
 import "./Options.css";
 import ErrorState from "./ErrorState";
-import { ChangeEvent, MouseEventHandler, useRef, useState } from "react";
+import { useState } from "react";
 
 export default function Options(props: Options) {
   const {
     errorMessage,
     showError,
     options,
-    value,
     onValueChange,
-    isRequired,
     fieldName,
     fieldLabel,
   } = props;

@@ -1,7 +1,7 @@
 import "./Field.css";
 import { type Textbox } from "./types";
 import ErrorState from "./ErrorState";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 
 export default function EmailAddress(props: Textbox) {
   const {
@@ -9,7 +9,6 @@ export default function EmailAddress(props: Textbox) {
     showError,
     value,
     onValueChange,
-    isRequired,
     fieldName,
     fieldLabel,
   } = props;
