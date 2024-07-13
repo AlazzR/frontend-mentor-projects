@@ -1,0 +1,46 @@
+:root {
+  box-sizing: border-box;
+}
+
+.field {
+  --test: hsl(200, 26%, 54%);
+  color: var(--test);
+}
+
+.field + .field {
+  margin-top: 1em;
+}
+
+.field__label {
+  display: block;
+}
+
+.field__label + .input-container {
+  margin-top: 0.5em;
+}
+.input-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid;
+}
+
+.input-container.left {
+  grid-template-columns: 50px auto;
+}
+
+.input-container.right {
+  grid-template-columns: auto 50px;
+}
+
+.input-container__logo {
+  color: white;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--test);
+}
+
+.input-container__input {
+  border: none;
+  padding: 5px;
+}
+
