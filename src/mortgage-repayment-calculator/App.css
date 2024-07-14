@@ -121,7 +121,7 @@ summary p{
     margin: auto;
     height: 190px;
     width: 190px;
-    background-image: url(./public/mortgage-repayment-calculator/illustration-empty.svg);
+    background-image: url(/mortgage-repayment-calculator/illustration-empty.svg);
   }
 
   .result {
