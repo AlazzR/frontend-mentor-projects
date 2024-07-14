@@ -5,9 +5,14 @@ export default function MortgageAmount(props: FieldElement) {
   return (
     <div className="field">
       <label className="field__label">Mortgage Amount</label>
-      <div className="input-container left">
-        <div className="input-container__logo">$</div>
-        <input className="input-container__input"></input>
+      <div className="input-container left left-border right-border">
+        <div className="input-container__logo left-border">$</div>
+        <input
+          className="input-container__input right-border"
+          type="number"
+          onChange={(event) => onChange(field, parseFloat(event.target.value))}
+          value={val as number}
+        ></input>
       </div>
     </div>
   );

@@ -1,10 +1,16 @@
 :root {
   box-sizing: border-box;
+    --lime: hsl(61, 70%, 52%);
+  --red: hsl(4, 69%, 50%);
+  --slate-100: hsl(202, 86%, 94%);
+  --slate-300: hsl(203, 41%, 72%);
+  --slate-500: hsl(200, 26%, 54%);
+  --slate-700: hsl(200, 24%, 40%);
+  --slate-900: hsl(202, 55%, 16%);
 }
 
 .field {
-  --test: hsl(200, 26%, 54%);
-  color: var(--test);
+  color: var(--slate-900);
 }
 
 .field + .field {
@@ -21,7 +27,7 @@
 .input-container {
   display: grid;
   grid-template-columns: auto auto;
-  border: 1px solid;
+  border: 1px solid  var(--slate-700);
 }
 
 .input-container.left {
@@ -33,10 +39,22 @@
 }
 
 .input-container__logo {
-  color: white;
+  color: var(--slate-900);
   text-align: center;
   padding: 5px;
-  background-color: var(--test);
+  background-color: var(--slate-100);
+}
+
+.right-border {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+.left-border {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
 }
 
 .input-container__input {

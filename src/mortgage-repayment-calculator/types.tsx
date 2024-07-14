@@ -7,11 +7,11 @@ export type OnChange = (field: string, val: number | MortgageTypes) => void;
 export type Field = {
   El: (props: FieldElement) => ReactElement;
   field: string;
-  val: number | MortgageTypes | null;
+  val: string | number | MortgageTypes | null;
 };
 
 export type FieldElement = {
   field: string;
-  val: MortgageTypes | number | null;
+  val: MortgageTypes | number | null | string;
   onChange: OnChange;
 };

@@ -20,10 +20,18 @@ export default function MortgageTypesElement(props: FieldElement) {
       <label className="field__label">Mortgage Types</label>
       <div className="options">
         {options.map((option) => {
+          const isSelected = val === option.val;
           return (
-            <div className="options__option">
+            <div
+              className={
+                "options__option left-border right-border " +
+                (isSelected ? "selected" : "")
+              }
+              onClick={() => onChange(field, option.val)}
+              key={option.val}
+            >
               <div className="option__select">
-                <div className={val === option.val ? "selected" : ""}></div>
+                <div className={isSelected ? "selected" : ""}></div>
               </div>
               <div>{option.text}</div>
             </div>
