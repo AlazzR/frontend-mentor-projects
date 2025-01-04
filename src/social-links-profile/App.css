@@ -1,0 +1,65 @@
+:root {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.modal {
+  width: 350px;
+  min-height: 300px;
+  /* TRouBLe*/
+  margin: 10% auto;
+
+  border-radius: 10px;
+  text-align: center;
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  padding: 2em;
+}
+
+.modal__img {
+  margin: 0 auto;
+  width: 100px;
+}
+.modal__img > img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+.modal__name {
+  font-size: 1.6em;
+}
+
+.modal__location {
+  color: hsl(75, 94%, 57%);
+}
+
+.modal__desc {
+  font-size: 0.9em;
+}
+
+.modal > .link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: hsl(0, 0%, 20%);
+  padding: 0.8em;
+  border-radius: 10px;
+}
+
+.link {
+  margin-top: 1em;
+}
+
+.link:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 20%);
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    margin: 50% auto;
+  }
+}
