@@ -1,0 +1,231 @@
+:root {
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --light-grayish-cyan: hsl(180, 52%, 96%);
+  --dark-graying-cyan: hsl(180, 8%, 52%);
+  --very-dark-graying-cyan: hsl(180, 14%, 20%);
+  --light-grayish-cyan-filter: hsl(180, 23%, 59%);
+  color: var(--desaturated-dark-cyan);
+}
+
+button {
+  color: var(--desaturated-dark-cyan);
+}
+
+.job-listing {
+  margin: 0 10% 0 10%;
+}
+
+.job-listing-header {
+  height: 100px;
+  background-image: url(/job-listing-with-filtering/bg-header-desktop.svg);
+  background-color: var(--light-grayish-cyan-filter);
+}
+.pointer {
+  cursor: pointer;
+}
+
+/* Filter */
+.filter {
+  position: relative;
+  box-shadow: -10px 10px 10px var(--light-grayish-cyan-filter);
+}
+.filter .container {
+  display: flex;
+}
+
+.filter .container .clear {
+  margin-left: auto;
+  margin-right: 2em;
+  background: white;
+  border: none;
+  padding: 1em;
+  font-weight: bold;
+}
+
+/* Selected Category */
+.selected-categories {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  gap: 1em;
+}
+.selected-category {
+  display: inline-block;
+}
+.remove-category-btn {
+  margin-left: 10px;
+  display: inline-block;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: var(--desaturated-dark-cyan);
+  border-radius: 4px;
+  padding: 5px;
+}
+/* Available Category */
+.available-categories {
+  width: 300px;
+  visibility: hidden;
+  left: calc(50% - 300px);
+  position: fixed;
+}
+
+.available-category {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--light-grayish-cyan);
+  border: 1px solid black;
+}
+.available-category + .available-category {
+  margin-top: 5px;
+}
+
+.show {
+  visibility: visible;
+}
+
+.remove-category-btn:active,
+.remove-category-btn:hover {
+  background-color: var(--very-dark-graying-cyan);
+}
+/* Posting */
+.job-posting {
+  display: flex;
+  padding: 2em;
+  height: 100px;
+  box-shadow: 10px 10px 10px var(--light-grayish-cyan-filter);
+  font-size: 1.1em;
+}
+.job-posting {
+  margin-top: 1em;
+}
+.new-posting {
+  border-left: 5px solid var(--desaturated-dark-cyan);
+}
+.image {
+  margin-top: 15px;
+}
+
+.main-section {
+  margin-left: 1em;
+}
+
+.main-section .title {
+  color: black;
+  font-weight: bold;
+}
+
+.title a {
+  color: black;
+  text-decoration: none;
+}
+
+.main-section .title a:hover {
+  color: var(--desaturated-dark-cyan);
+}
+.side-section {
+  display: flex;
+  gap: 0.5em;
+  margin-top: calc(100px / 2);
+  margin-left: auto;
+}
+/* Job Heading */
+.heading {
+  display: flex;
+  height: 60px;
+}
+
+.flags {
+  display: flex;
+  text-align: center;
+  gap: 0.5em;
+  font-size: 0.8em;
+  margin-top: calc(40px / 2);
+  margin-left: 1em;
+}
+.flag {
+  height: 30px;
+  padding: 0.2em;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.new-flag {
+  background-color: var(--desaturated-dark-cyan);
+  color: white;
+}
+/* Tags */
+.tag {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.tag.active,
+.tag:hover {
+  color: white;
+  background-color: var(--desaturated-dark-cyan);
+}
+
+.footer {
+  margin-top: 0.8em;
+  color: var(--dark-graying-cyan);
+}
+
+.footer span + span::before {
+  content: "\25C6";
+  margin-right: 2em;
+  font-size: 0.5em;
+}
+
+.footer span + span {
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 450px) {
+  .job-listing-header {
+    background-image: url(/job-listing-with-filtering/bg-header-mobile.svg);
+  }
+  .job-posting {
+    flex-direction: column;
+    height: auto;
+  }
+  .image img {
+    width: 50px;
+    height: 50px;
+  }
+  .side-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footer {
+    font-size: 0.8em;
+  }
+
+  .main-section {
+    margin-left: 0;
+  }
+  .side-section {
+    border-top: 1px solid var(--dark-graying-cyan);
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+  .heading {
+    height: auto;
+  }
+
+  .flags {
+    flex-wrap: wrap;
+  }
+
+  .available-categories {
+    left: auto;
+  }
+}
