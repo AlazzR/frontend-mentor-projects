@@ -45,3 +45,7 @@ git push origin master
 ```
 
 - Check the actions since it will take time for github to queue and process your job
+
+# Screen Record on Ubuntu
+
+CTRL + ALT + SHIFT + R
